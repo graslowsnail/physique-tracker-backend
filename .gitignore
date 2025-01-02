@@ -1,0 +1,28 @@
+# Virtual environment folders
+env/
+.venv/
+
+# Compiled Python files
+*.pyc
+__pycache__/
+migrations/__pycache__/
+
+# Editor configuration
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+
+# Other
+*.log
+
+
+# SQLite database and instance folder
+instance/
+*.db
+
