@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 
 from app.routes.user_routes import user_routes
 from app.routes.main_routes import main_routes
+from app.routes.pdf_routes import pdf_routes
 
 # Load env variables from .env
 load_dotenv()
@@ -24,7 +25,7 @@ def create_app():
     # Register Blueprints
     app.register_blueprint(main_routes)
     app.register_blueprint(user_routes)
-
+    app.register_blueprint(pdf_routes)
     # Import models here to make sure they are loaded
     from app.models.user import User
 
