@@ -20,7 +20,7 @@ fileConfig(config.config_file_name)
 logger = logging.getLogger("alembic.env")
 
 # Import app and db to load models
-from app import db
+from app.models.db import db
 target_metadata = db.metadata  # Set the metadata for model detection
 
 
